@@ -1,0 +1,238 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:transistors
+LIBS:conn
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wizard
+LIBS:special
+LIBS:sourcstm
+LIBS:source
+LIBS:port
+LIBS:marker
+LIBS:eval
+LIBS:breakout
+LIBS:analog_p
+LIBS:analog
+LIBS:abm
+LIBS:VLAB
+LIBS:RAJ
+LIBS:CONNECT
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR1
+U 1 1 70135024
+P 3750 4500
+F 0 "#PWR1" H 5650 6600 30  0001 L CNN
+F 1 "AGND" H 5650 6680 30  0001 L CNN
+F 2 "" H 3750 4500 60  0001 C CNN
+F 3 "" H 3750 4500 60  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSRC_PSPICE V1
+U 1 1 57472366
+P 2650 3800
+F 0 "V1" H 2650 3800 30  0001 L CNN
+F 1 "3V" H 2920 3600 30  0000 C CNN
+F 2 "" H 2650 3800 60  0001 C CNN
+F 3 "" H 2650 3800 60  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PSPICE R1
+U 1 1 12547947
+P 3450 3800
+F 0 "R1" H 3450 3800 30  0001 L CNN
+F 1 "5" H 3450 4000 30  0000 L CNN
+F 2 "" H 3450 3800 60  0001 C CNN
+F 3 "" H 3450 3800 60  0001 C CNN
+	1    3450 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R_PSPICE R2
+U 1 1 62332480
+P 2850 3500
+F 0 "R2" H 2850 3500 30  0001 L CNN
+F 1 "1" H 2850 3650 30  0000 L CNN
+F 2 "" H 2850 3500 60  0001 C CNN
+F 3 "" H 2850 3500 60  0001 C CNN
+	1    2850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L G_PSPICE G1
+U 1 1 62748846
+P 3750 3500
+F 0 "G1" H 3750 3500 30  0001 L CNN
+F 1 "2" H 4020 3350 30  0000 L CNN
+F 2 "" H 3750 3500 60  0001 C CNN
+F 3 "" H 3750 3500 60  0001 C CNN
+	1    3750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PSPICE R3
+U 1 1 43755590
+P 3750 3000
+F 0 "R3" H 3750 3000 30  0001 L CNN
+F 1 "2" H 3750 3150 30  0000 L CNN
+F 2 "" H 3750 3000 60  0001 C CNN
+F 3 "" H 3750 3000 60  0001 C CNN
+	1    3750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PSPICE R4
+U 1 1 60662752
+P 4550 3500
+F 0 "R4" H 4550 3500 30  0001 L CNN
+F 1 "3" H 4550 3650 30  0000 L CNN
+F 2 "" H 4550 3500 60  0001 C CNN
+F 3 "" H 4550 3500 60  0001 C CNN
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PSPICE R5
+U 1 1 67440462
+P 5250 3800
+F 0 "R5" H 5250 3800 30  0001 L CNN
+F 1 "999999MEG" H 5250 4100 30  0000 L CNN
+F 2 "" H 5250 3800 60  0001 C CNN
+F 3 "" H 5250 3800 60  0001 C CNN
+	1    5250 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk
+U 1 1 23629251
+P 9700 7200
+F 0 "titleblk" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+F 2 "" H 9700 7200 60  0001 C CNN
+F 3 "" H 9700 7200 60  0001 C CNN
+	1    9700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 34076763
+P 5250 3500
+F 0 "VIEWPOINT" H 8650 4600 30  0001 L CNN
+F 1 "VIEWPOINT" H 8650 4680 30  0001 L CNN
+F 2 "" H 5250 3500 60  0001 C CNN
+F 3 "" H 5250 3500 60  0001 C CNN
+	1    5250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3500 2850 3500
+Wire Wire Line
+	2650 3800 2650 3500
+Wire Wire Line
+	3250 3500 3450 3500
+Wire Wire Line
+	3750 3000 3450 3000
+Wire Wire Line
+	4250 3300 4250 3600
+Wire Wire Line
+	4250 3600 4150 3600
+Wire Wire Line
+	4250 3300 3450 3300
+Wire Wire Line
+	3450 3500 3750 3500
+Wire Wire Line
+	3450 3300 3450 3500
+Wire Wire Line
+	3450 3000 3450 3300
+Wire Wire Line
+	3450 3800 3450 3500
+Wire Wire Line
+	4450 3000 4450 3500
+Wire Wire Line
+	4150 3000 4450 3000
+Wire Wire Line
+	4150 3500 4450 3500
+Wire Wire Line
+	4450 3500 4550 3500
+Wire Wire Line
+	2650 4200 2650 4500
+Wire Wire Line
+	2650 4500 3450 4500
+Wire Wire Line
+	3450 4500 3750 4500
+Wire Wire Line
+	3450 4200 3450 4500
+Wire Wire Line
+	3750 4500 5250 4500
+Wire Wire Line
+	3750 3600 3750 4500
+Wire Wire Line
+	5250 4200 5250 4500
+Wire Wire Line
+	4950 3500 5250 3500
+Wire Wire Line
+	5250 3800 5250 3500
+Connection ~ 4450 3500
+Connection ~ 3450 3500
+Connection ~ 3450 3300
+Connection ~ 3450 4500
+Connection ~ 3750 4500
+Connection ~ 2650 3800
+Connection ~ 2650 4200
+Connection ~ 3450 3800
+Connection ~ 3450 4200
+Connection ~ 2850 3500
+Connection ~ 3250 3500
+Connection ~ 4150 3500
+Connection ~ 3750 3500
+Connection ~ 4150 3600
+Connection ~ 3750 3600
+Connection ~ 4150 3000
+Connection ~ 3750 3000
+Connection ~ 4550 3500
+Connection ~ 4950 3500
+Connection ~ 3750 4500
+Connection ~ 5250 3800
+Connection ~ 5250 4200
+Connection ~ 5250 3500
+$EndSCHEMATC

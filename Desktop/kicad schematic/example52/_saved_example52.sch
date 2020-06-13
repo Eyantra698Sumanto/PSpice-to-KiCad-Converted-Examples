@@ -1,0 +1,277 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:transistors
+LIBS:conn
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wizard
+LIBS:special
+LIBS:sourcstm
+LIBS:source
+LIBS:port
+LIBS:marker
+LIBS:eval
+LIBS:breakout
+LIBS:analog_p
+LIBS:analog
+LIBS:abm
+LIBS:VLAB
+LIBS:RAJ
+LIBS:CONNECT
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR1
+U 1 1 67936520
+P 4050 4100
+F 0 "#PWR1" H 5650 6000 30  0001 L CNN
+F 1 "AGND" H 5650 6080 30  0001 L CNN
+F 2 "" H 4050 4100 60  0001 C CNN
+F 3 "" H 4050 4100 60  0001 C CNN
+	1    4050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_PSPICE R3
+U 1 1 34099638
+P 5150 3600
+F 0 "R3" H 5150 3600 30  0001 L CNN
+F 1 "0.5K" H 5150 3850 30  0000 L CNN
+F 2 "" H 5150 3600 60  0001 C CNN
+F 3 "" H 5150 3600 60  0001 C CNN
+	1    5150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R_PSPICE R1
+U 1 1 81693780
+P 3450 3400
+F 0 "R1" H 3450 3400 30  0001 L CNN
+F 1 "0.25K" H 3450 3450 30  0000 L CNN
+F 2 "" H 3450 3400 60  0001 C CNN
+F 3 "" H 3450 3400 60  0001 C CNN
+	1    3450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSRC_PSPICE V2
+U 1 1 86234975
+P 5850 3400
+F 0 "V2" H 5850 3400 30  0001 L CNN
+F 1 "4" H 6120 3320 30  0000 C CNN
+F 2 "" H 5850 3400 60  0001 C CNN
+F 3 "" H 5850 3400 60  0001 C CNN
+	1    5850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L E_PSPICE E1
+U 1 1 53169130
+P 4650 3000
+F 0 "E1" H 4650 3000 30  0001 L CNN
+F 1 "4" H 4920 3190 30  0000 L CNN
+F 2 "" H 4650 3000 60  0001 C CNN
+F 3 "" H 4650 3000 60  0001 C CNN
+	1    4650 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L R_PSPICE R2
+U 1 1 85870441
+P 4050 3500
+F 0 "R2" H 4050 3500 30  0001 L CNN
+F 1 "1K" H 4050 3750 30  0000 L CNN
+F 2 "" H 4050 3500 60  0001 C CNN
+F 3 "" H 4050 3500 60  0001 C CNN
+	1    4050 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L IDC_PSPICE I1
+U 1 1 40590299
+P 6150 3900
+F 0 "I1" H 6150 3900 30  0001 L CNN
+F 1 "0.1A" H 6150 3760 30  0000 C CNN
+F 2 "" H 6150 3900 60  0001 C CNN
+F 3 "" H 6150 3900 60  0001 C CNN
+	1    6150 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L VSRC_PSPICE V1
+U 1 1 21315211
+P 3250 4000
+F 0 "V1" H 3250 4000 30  0001 L CNN
+F 1 "2V" H 3520 4400 30  0000 C CNN
+F 2 "" H 3250 4000 60  0001 C CNN
+F 3 "" H 3250 4000 60  0001 C CNN
+	1    3250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_PSPICE R4
+U 1 1 99384825
+P 4950 2700
+F 0 "R4" H 4950 2700 30  0001 L CNN
+F 1 "0.5K" H 4950 2850 30  0000 L CNN
+F 2 "" H 4950 2700 60  0001 C CNN
+F 3 "" H 4950 2700 60  0001 C CNN
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk
+U 1 1 30232438
+P 9700 7200
+F 0 "titleblk" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+F 2 "" H 9700 7200 60  0001 C CNN
+F 3 "" H 9700 7200 60  0001 C CNN
+	1    9700 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 30657331
+P 5150 3400
+F 0 "VIEWPOINT" H 7850 4600 30  0001 L CNN
+F 1 "VIEWPOINT" H 7850 4680 30  0001 L CNN
+F 2 "" H 5150 3400 60  0001 C CNN
+F 3 "" H 5150 3400 60  0001 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 96215265
+P 4050 3400
+F 0 "VIEWPOINT" H 5650 4600 30  0001 L CNN
+F 1 "VIEWPOINT" H 5650 4680 30  0001 L CNN
+F 2 "" H 4050 3400 60  0001 C CNN
+F 3 "" H 4050 3400 60  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 26853551
+P 6150 3400
+F 0 "VIEWPOINT" H 9850 4600 30  0001 L CNN
+F 1 "VIEWPOINT" H 9850 4680 30  0001 L CNN
+F 2 "" H 6150 3400 60  0001 C CNN
+F 3 "" H 6150 3400 60  0001 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3400 4050 3400
+Wire Wire Line
+	4050 2700 4050 3000
+Wire Wire Line
+	4050 2700 4950 2700
+Wire Wire Line
+	4550 3000 4050 3000
+Wire Wire Line
+	4050 3400 4550 3400
+Wire Wire Line
+	4050 3500 4050 3400
+Wire Wire Line
+	4050 3000 4050 3400
+Wire Wire Line
+	3250 4100 4050 4100
+Wire Wire Line
+	3250 4000 3250 4100
+Wire Wire Line
+	4050 3900 4050 4100
+Wire Wire Line
+	6150 4100 6150 3900
+Wire Wire Line
+	4050 4100 5150 4100
+Wire Wire Line
+	5150 4100 6150 4100
+Wire Wire Line
+	5150 4000 5150 4100
+Wire Wire Line
+	4650 3400 5150 3400
+Wire Wire Line
+	5150 3400 5450 3400
+Wire Wire Line
+	5150 3600 5150 3400
+Wire Wire Line
+	3250 3600 3250 3400
+Wire Wire Line
+	4650 3000 4650 2900
+Wire Wire Line
+	3250 3400 3250 2900
+Wire Wire Line
+	3450 3400 3250 3400
+Wire Wire Line
+	4650 2900 3250 2900
+Wire Wire Line
+	6150 2700 6150 3400
+Wire Wire Line
+	5350 2700 6150 2700
+Wire Wire Line
+	5850 3400 6150 3400
+Wire Wire Line
+	6150 3500 6150 3400
+Connection ~ 5350 2700
+Connection ~ 5850 3400
+Connection ~ 6150 3400
+Connection ~ 6150 3500
+Connection ~ 4950 2700
+Connection ~ 4550 3000
+Connection ~ 4550 3400
+Connection ~ 4050 3400
+Connection ~ 4050 3500
+Connection ~ 4050 3000
+Connection ~ 3850 3400
+Connection ~ 4050 4100
+Connection ~ 3250 4000
+Connection ~ 4050 3900
+Connection ~ 6150 3900
+Connection ~ 5150 4000
+Connection ~ 5150 4100
+Connection ~ 5450 3400
+Connection ~ 5150 3400
+Connection ~ 5150 3600
+Connection ~ 4650 3400
+Connection ~ 4650 3000
+Connection ~ 3250 3400
+Connection ~ 3250 3600
+Connection ~ 3450 3400
+$EndSCHEMATC

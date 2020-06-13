@@ -1,0 +1,239 @@
+EESchema Schematic File Version 2  date 
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR1
+U 1 1 91666681
+P 3800 1700
+F 0 "#PWR1" H 7600 3400 30  0001 L CNN
+F 1 "AGND" H 7600 3480 30  0001 L CNN
+	1    3800 1700
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 53178587
+P 200 1300
+F 0 "#PWR2" H 400 2600 30  0001 L CNN
+F 1 "AGND" H 400 2680 30  0001 L CNN
+	1    200 1300
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 60507188
+P 2400 1700
+F 0 "#PWR3" H 4800 3400 30  0001 L CNN
+F 1 "AGND" H 4800 3480 30  0001 L CNN
+	1    2400 1700
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 36213811
+P 1300 1700
+F 0 "#PWR4" H 2600 3400 30  0001 L CNN
+F 1 "AGND" H 2600 3480 30  0001 L CNN
+	1    1300 1700
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R1
+U 1 1 56299842
+P 1500 1400
+F 0 "R1" H 1500 1400 30  0000 L CNN
+F 1 "2K" H 1500 1550 30  0000 L CNN
+	1    1500 1400
+	1    0    0    -1
+$EndComp
+$Comp
+L uA741_PSPICE U1
+U 1 1 85855540
+P 2600 1000
+F 0 "U1" H 2600 1060 30  0000 L CNN
+F 1 "uA741" H 2600 1140 30  0000 L CNN
+	1    2600 1000
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE RL
+U 1 1 75447039
+P 3800 1300
+F 0 "RL" H 3800 1300 30  0000 L CNN
+F 1 "6K" H 3800 1550 30  0000 L CNN
+	1    3800 1300
+	0    1    1    0
+$EndComp
+$Comp
+L VSRC_PSPICE V1
+U 1 1 63701447
+P 1300 1400
+F 0 "V1" H 1300 1400 30  0000 L CNN
+F 1 "1" H 1570 1260 30  0000 C CNN
+	1    1300 1400
+	1    0    0    -1
+$EndComp
+$Comp
+L VDC_PSPICE V3
+U 1 1 46243832
+P 600 1400
+F 0 "V3" H 600 1400 30  0000 L CNN
+F 1 "10V" H 600 1310 30  0000 C CNN
+	1    600 1400
+	1    0    0    -1
+$EndComp
+$Comp
+L VDC_PSPICE V2
+U 1 1 84593895
+P 600 800
+F 0 "V2" H 600 800 30  0000 L CNN
+F 1 "10V" H 600 670 30  0000 C CNN
+	1    600 800
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R2
+U 1 1 35609273
+P 2800 600
+F 0 "R2" H 2800 600 30  0000 L CNN
+F 1 "9K" H 2800 570 30  0000 L CNN
+	1    2800 600
+	1    0    0    -1
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk
+U 1 1 16355417
+P 9700 7200
+F 0 "titleblk" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+	1    9700 7200
+	1    0    0    -1
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 93866333
+P 1300 1400
+F 0 "VIEWPOINT" H 2600 2800 30  0001 L CNN
+F 1 "VIEWPOINT" H 2600 2880 30  0001 L CNN
+	1    1300 1400
+	1    0    0    -1
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 46265886
+P 2000 1400
+F 0 "VIEWPOINT" H 4000 2800 30  0001 L CNN
+F 1 "VIEWPOINT" H 4000 2880 30  0001 L CNN
+	1    2000 1400
+	1    0    0    -1
+$EndComp
+$Comp
+L VIEWPOINT_PSPICE VIEWPOINT
+U 1 1 71426584
+P 3800 1200
+F 0 "VIEWPOINT" H 7600 2400 30  0001 L CNN
+F 1 "VIEWPOINT" H 7600 2480 30  0001 L CNN
+	1    3800 1200
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	600 1300 200 1300
+Wire Wire Line
+	600 1300 600 1400
+Wire Wire Line
+	600 1200 600 1300
+Wire Wire Line
+	2600 1000 2400 1000
+Wire Wire Line
+	2400 1000 2400 1700
+Wire Wire Line
+	1300 1400 1500 1400
+Wire Wire Line
+	1300 1700 1300 1800
+Wire Wire Line
+	600 1700 600 1800
+Wire Wire Line
+	2000 1400 2600 1400
+Wire Wire Line
+	1900 1400 2000 1400
+Wire Wire Line
+	2000 600 2800 600
+Wire Wire Line
+	2000 1400 2000 600
+Wire Wire Line
+	3400 1200 3800 1200
+Wire Wire Line
+	3800 1200 3800 1300
+Wire Wire Line
+	3200 600 3800 600
+Wire Wire Line
+	3800 600 3800 1200
+Connection ~ 3400 1200
+Connection ~ 3000 900
+Connection ~ 3000 1500
+Connection ~ 3800 1300
+Connection ~ 3800 1700
+Connection ~ 3800 1200
+Connection ~ 2600 1400
+Connection ~ 2600 1000
+Connection ~ 1300 1400
+Connection ~ 1900 1400
+Connection ~ 1500 1400
+Connection ~ 2000 1400
+Connection ~ 200 1300
+Connection ~ 600 1400
+Connection ~ 600 1200
+Connection ~ 600 1300
+Connection ~ 2400 1700
+Connection ~ 1300 1400
+Connection ~ 1300 1400
+Connection ~ 1300 1800
+Connection ~ 1300 1700
+Connection ~ 600 1800
+Connection ~ 600 1700
+Connection ~ 2800 600
+Connection ~ 3200 600
+Connection ~ 600 800
+$EndSCHEMATC
